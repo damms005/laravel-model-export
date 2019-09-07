@@ -13,5 +13,5 @@ return array(
     '3c1295d4016eab291ebe4b222c21b881' => $vendorDir . '/andrey-helldar/support/src/helpers/dumper.php',
     'cd44fd910ead9df86f89650c8f74a592' => $vendorDir . '/andrey-helldar/support/src/helpers/http.php',
     '62d148a1e208cbb9402f38bff625eb70' => $vendorDir . '/andrey-helldar/support/src/helpers/strings.php',
-    '9e4824c5afbdc1482b6025ce3d4dfde8' => $vendorDir . '/league/csv/src/functions_include.php',
+    'c379e2a4ec3735f6c4915556c8c81813' => $vendorDir . '/rap2hpoutre/fast-excel/src/functions/fastexcel.php',
 );

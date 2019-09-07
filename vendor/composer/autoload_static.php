@@ -14,7 +14,7 @@ class ComposerStaticInit38fac928a458d37b22756f03a395840b
         '3c1295d4016eab291ebe4b222c21b881' => __DIR__ . '/..' . '/andrey-helldar/support/src/helpers/dumper.php',
         'cd44fd910ead9df86f89650c8f74a592' => __DIR__ . '/..' . '/andrey-helldar/support/src/helpers/http.php',
         '62d148a1e208cbb9402f38bff625eb70' => __DIR__ . '/..' . '/andrey-helldar/support/src/helpers/strings.php',
-        '9e4824c5afbdc1482b6025ce3d4dfde8' => __DIR__ . '/..' . '/league/csv/src/functions_include.php',
+        'c379e2a4ec3735f6c4915556c8c81813' => __DIR__ . '/..' . '/rap2hpoutre/fast-excel/src/functions/fastexcel.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -28,15 +28,14 @@ class ComposerStaticInit38fac928a458d37b22756f03a395840b
             'Symfony\\Component\\Process\\' => 26,
             'Symfony\\Component\\Console\\' => 26,
         ),
+        'R' => 
+        array (
+            'Rap2hpoutre\\FastExcel\\' => 22,
+        ),
         'P' => 
         array (
             'Psr\\SimpleCache\\' => 16,
             'Psr\\Container\\' => 14,
-        ),
-        'L' => 
-        array (
-            'League\\Csv\\' => 11,
-            'Laracsv\\' => 8,
         ),
         'I' => 
         array (
@@ -58,6 +57,10 @@ class ComposerStaticInit38fac928a458d37b22756f03a395840b
         'C' => 
         array (
             'Carbon\\' => 7,
+        ),
+        'B' => 
+        array (
+            'Box\\Spout\\' => 10,
         ),
     );
 
@@ -90,6 +93,10 @@ class ComposerStaticInit38fac928a458d37b22756f03a395840b
         array (
             0 => __DIR__ . '/..' . '/symfony/console',
         ),
+        'Rap2hpoutre\\FastExcel\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/rap2hpoutre/fast-excel/src',
+        ),
         'Psr\\SimpleCache\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/simple-cache/src',
@@ -97,14 +104,6 @@ class ComposerStaticInit38fac928a458d37b22756f03a395840b
         'Psr\\Container\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
-        ),
-        'League\\Csv\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/league/csv/src',
-        ),
-        'Laracsv\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/usmanhalalit/laracsv/src/Laracsv',
         ),
         'Illuminate\\Support\\' => 
         array (
@@ -141,6 +140,10 @@ class ComposerStaticInit38fac928a458d37b22756f03a395840b
         'Carbon\\' => 
         array (
             0 => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon',
+        ),
+        'Box\\Spout\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/box/spout/src/Spout',
         ),
     );
 

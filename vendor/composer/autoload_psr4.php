@@ -13,10 +13,9 @@ return array(
     'Symfony\\Component\\Translation\\' => array($vendorDir . '/symfony/translation'),
     'Symfony\\Component\\Process\\' => array($vendorDir . '/symfony/process'),
     'Symfony\\Component\\Console\\' => array($vendorDir . '/symfony/console'),
+    'Rap2hpoutre\\FastExcel\\' => array($vendorDir . '/rap2hpoutre/fast-excel/src'),
     'Psr\\SimpleCache\\' => array($vendorDir . '/psr/simple-cache/src'),
     'Psr\\Container\\' => array($vendorDir . '/psr/container/src'),
-    'League\\Csv\\' => array($vendorDir . '/league/csv/src'),
-    'Laracsv\\' => array($vendorDir . '/usmanhalalit/laracsv/src/Laracsv'),
     'Illuminate\\Support\\' => array($vendorDir . '/illuminate/support'),
     'Illuminate\\Database\\' => array($vendorDir . '/illuminate/database'),
     'Illuminate\\Contracts\\' => array($vendorDir . '/illuminate/contracts'),
@@ -26,4 +25,5 @@ return array(
     'Helldar\\LaravelLangPublisher\\' => array($vendorDir . '/andrey-helldar/laravel-lang-publisher/src'),
     'Doctrine\\Common\\Inflector\\' => array($vendorDir . '/doctrine/inflector/lib/Doctrine/Common/Inflector'),
     'Carbon\\' => array($vendorDir . '/nesbot/carbon/src/Carbon'),
+    'Box\\Spout\\' => array($vendorDir . '/box/spout/src/Spout'),
 );
