@@ -1,0 +1,30 @@
+{
+	"name": "damms005/laravel-model-export",
+	"type": "library",
+	"description": "Easily export Eloquent models in Laravel, GUI ready.",
+	"keywords": [
+		"export",
+		"excel"
+	],
+	"homepage": "http://www.doctrine-project.org",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Johannes Schmitt",
+			"email": "schmittjoh@gmail.com"
+		}
+	],
+	"require": {
+		"usmanhalalit/laracsv": "^2.0"
+	},
+	"extra": {
+		"laravel": {
+			"providers": [
+				"Damms005\\LaravelModelExport\\ServiceProvider"
+			],
+			"aliases": {
+				"LaravelModelExport": "Damms005\\LaravelModelExport\\\\Facade"
+			}
+		}
+	}
+}
