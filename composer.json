@@ -19,6 +19,11 @@
 		"rap2hpoutre/fast-excel": "^1.3",
 		"beberlei/assert": "^3.2"
 	},
+	"autoload": {
+		"psr-4": {
+			"Damms005\\LaravelModelExport\\": "src/"
+		}
+	},
 	"extra": {
 		"laravel": {
 			"providers": [
