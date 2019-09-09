@@ -12,10 +12,12 @@ class LaravelModelExportController extends Controller
 	public function index()
 	{
 		$configuredModels = collect(config('laravel-model-export.exportableModels'));
-		$exportableModels = $configuredModels->transform(function ($item, $modelName) {
-			$table = (new $modelName)->getTable();
-			return collect($this->getTableColumns($table))->filter(function ($column) use ($table) {
-				return in_array(DB::connection()->getDoctrineColumn($table, $column)->getType()->getName(), ['int', 'bigint', 'date', 'datetime']);
+		$exportableModels = [];
+		$configuredModels->each(function ($modelName) use (&$exportableModels) {
+			$table                        = (new $modelName)->getTable();
+			$exportableModels[$modelName] =
+			collect($this->getTableColumns($table))->filter(function ($column) use ($table) {
+				return in_array(DB::connection()->getDoctrineColumn($table, $column)->getType()->getName(), ['integer', 'bigint', 'date', 'datetime']);
 			})->toArray();
 		});
 
