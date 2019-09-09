@@ -3,30 +3,43 @@
 namespace Damms005\LaravelModelExport\Controllers;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\Request;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Rap2hpoutre\FastExcel\FastExcel;
 
 class LaravelModelExportController extends Controller
 {
 	public function index()
 	{
-		// provides an interface where all models are listed, and
-		// you can follow the simple step to export:
-		//1. Select the target model
-		//2. Select lower range for download filter
-		//3. Select upper range for download filter
-		//4. Download
+		$configuredModels = collect(config('laravel-model-export.exportableModels'));
+		$exportableModels = $configuredModels->transform(function ($item, $modelName) {
+			$table = (new $modelName)->getTable();
+			return collect($this->getTableColumns($table))->filter(function ($column) use ($table) {
+				return in_array(DB::connection()->getDoctrineColumn($table, $column)->getType()->getName(), ['int', 'bigint', 'date', 'datetime']);
+			})->toArray();
+		});
 
-		$exportableModels = config('laravel-model-export.exportableModels');
 		return view('laravel-model-export::index', compact('exportableModels'));
+	}
+
+	public function getTableColumns($table)
+	{
+		return DB::getSchemaBuilder()->getColumnListing($table);
 	}
 
 	public function download(Request $request)
 	{
-		//get lower range
-		//get upper range
-		//apply it to model
-		$model = $request->input('model');
-		(new FastExcel($users))->export('file.xlsx');
+		$filterProperty = $request->input('filterProperty');
+		$model          = $request->input('model');
+		$items          = (new $model())
+			->where($filterProperty, '>=', $request->input('filterLower'))
+			->where($filterProperty, '<=', $request->input('filterUpper'))
+			->get();
+
+		if ($items->isEmpty()) {
+			return "No items in the selected range";
+		} else {
+			return (new FastExcel($items))->configureCsv('\t', '', '\n', "UTF-8")->download('file.xlsx');
+		}
 	}
 }
