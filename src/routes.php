@@ -8,7 +8,7 @@ Route::group(['prefix' => 'laravel-model-export'], function () {
 	)->name('laravel-model-export.index');
 
 	Route::post('download',
-		"Damms005\LaravelModelExport\Controllers\LaravelModelExportController@index"
+		"Damms005\LaravelModelExport\Controllers\LaravelModelExportController@download"
 	)->name('laravel-model-export.download');
 
 });

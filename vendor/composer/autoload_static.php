@@ -14,6 +14,7 @@ class ComposerStaticInit38fac928a458d37b22756f03a395840b
         '3c1295d4016eab291ebe4b222c21b881' => __DIR__ . '/..' . '/andrey-helldar/support/src/helpers/dumper.php',
         'cd44fd910ead9df86f89650c8f74a592' => __DIR__ . '/..' . '/andrey-helldar/support/src/helpers/http.php',
         '62d148a1e208cbb9402f38bff625eb70' => __DIR__ . '/..' . '/andrey-helldar/support/src/helpers/strings.php',
+        'a4ecaeafb8cfb009ad0e052c90355e98' => __DIR__ . '/..' . '/beberlei/assert/lib/Assert/functions.php',
         'c379e2a4ec3735f6c4915556c8c81813' => __DIR__ . '/..' . '/rap2hpoutre/fast-excel/src/functions/fastexcel.php',
     );
 
@@ -61,6 +62,10 @@ class ComposerStaticInit38fac928a458d37b22756f03a395840b
         'B' => 
         array (
             'Box\\Spout\\' => 10,
+        ),
+        'A' => 
+        array (
+            'Assert\\' => 7,
         ),
     );
 
@@ -144,6 +149,10 @@ class ComposerStaticInit38fac928a458d37b22756f03a395840b
         'Box\\Spout\\' => 
         array (
             0 => __DIR__ . '/..' . '/box/spout/src/Spout',
+        ),
+        'Assert\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/beberlei/assert/lib/Assert',
         ),
     );
 
