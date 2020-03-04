@@ -4,16 +4,15 @@ Easily export Eloquent models in Laravel, GUI ready!
 
 Spoiler alert: a little ranting :)
 
-This Laravel package is born out of my love for and everyday use of [Voyager](https://github.com/the-control-group/voyager), and there are situation when I need to move/copy some of my Voyager-managed Eloquent data for use in some other place - this is not possible as at the time of writing this package. Hence, this package may become obsolete the very day we can filter and download eloquent models directly from Voyager.
+This Laravel package is born out of my love for, and everyday use of [Voyager](https://github.com/the-control-group/voyager). There are times that I need to move/copy some of my Voyager-managed Eloquent data for use on some other third-party platform/share with client. Sometimes too I give client access to download their data in Excel. Hence the need for a cross-platform or a more ubiquitous format of my data (this makes existing tools like [iseed](https://github.com/orangehill/iseed) to not be very useful in this case, since these tools is focused on sql-sql porting). Therefore, this package may become obsolete the very day we can filter and download eloquent models directly from Voyager.
 
-Notwithstanding the above rant and perhaps needless to say, **this package is not Voyager-dependent nor is it tightly coupled with Voyager: it simply a Laravel package that provides the ability to export Eloquent models based on selected range**
-
+Needless to say, **this package is not Voyager-dependent nor is it tightly coupled with Voyager**. It simply a Laravel package that provides the ability to export Eloquent models based on selected range.
 
 # Installation
 `composer require damms005/laravel-model-export`
 
 # Usage
-After installation, visit: `http://localhost/yourwebsite/laravel-model-export`
+After installation, the `laravel-model-export` url is registered to your routes. So visit: `http://yourwebsite.com/laravel-model-export`
 
 # Todo:
 
