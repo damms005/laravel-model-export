@@ -4,7 +4,7 @@ Easily export Eloquent models in Laravel, GUI ready!
 
 Spoiler alert: a little ranting :)
 
-This Laravel package is born out of my love for, and everyday use of [Voyager](https://github.com/the-control-group/voyager). There are times that I need to move/copy some of my Voyager-managed Eloquent data for use on some other third-party platform/share with client. Sometimes too I give client access to download their data in Excel. Hence the need for a cross-platform or a more ubiquitous format of my data (this makes existing tools like [iseed](https://github.com/orangehill/iseed) to not be very useful in this case, since these tools is focused on sql-sql porting). Therefore, this package may become obsolete the very day we can filter and download eloquent models directly from Voyager.
+This Laravel package is born out of my love for, and everyday use of [Voyager](https://github.com/the-control-group/voyager). There are times that I need to move/copy some of my Voyager-managed Eloquent data for use on some other third-party platform/share with client. Sometimes too I give client access to download their data in Excel. Voyager does not provide this export feature currently. Therefore, this package may become obsolete the very day we can filter and download eloquent models directly from Voyager.
 
 Needless to say, **this package is not Voyager-dependent nor is it tightly coupled with Voyager**. It simply a Laravel package that provides the ability to export Eloquent models based on your filter options.
 
