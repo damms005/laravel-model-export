@@ -1,6 +1,6 @@
 # laravel-model-export
 
-[![Latest Stable Version](https://poser.pugx.org/damms005/laravel-model-export/v)](//packagist.org/packages/damms005/laravel-model-export) [![Total Downloads](https://poser.pugx.org/damms005/laravel-model-export/downloads)](//packagist.org/packages/damms005/laravel-model-export) [![License](https://poser.pugx.org/damms005/laravel-model-export/license)](//packagist.org/packages/damms005/laravel-model-export)
+[[![Total Downloads](https://poser.pugx.org/damms005/laravel-model-export/downloads)](//packagist.org/packages/damms005/laravel-model-export) [![License](https://poser.pugx.org/damms005/laravel-model-export/license)](//packagist.org/packages/damms005/laravel-model-export)
 
 ![Art image for laravel-model-export](https://banners.beyondco.de/laravel-model-export.png?theme=light&packageManager=composer+require&packageName=damms005%2Flaravel-model-export&pattern=circuitBoard&style=style_1&description=Easily+filter+and+export+Eloquent+models+in+Laravel%2C+GUI+ready&md=1&showWatermark=1&fontSize=100px&images=tag&widths=350)
 

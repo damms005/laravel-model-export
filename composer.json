@@ -5,7 +5,8 @@
 	"keywords": [
 		"laravel",
 		"model",
-		"export"
+		"export",
+		"vue"
 	],
 	"homepage": "https://github.com/damms005/laravel-model-export",
 	"license": "MIT",
