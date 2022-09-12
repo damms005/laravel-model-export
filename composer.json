@@ -16,9 +16,6 @@
 			"email": "damms005@gmail.com"
 		}
 	],
-	"require": {
-		"rap2hpoutre/fast-excel": "^2.0"
-	},
 	"autoload": {
 		"psr-4": {
 			"Damms005\\LaravelModelExport\\": "src/"
@@ -30,5 +27,8 @@
 				"Damms005\\LaravelModelExport\\LaravelModelExportServiceProvider"
 			]
 		}
+	},
+	"require": {
+		"rap2hpoutre/fast-excel": "^4.1"
 	}
 }
